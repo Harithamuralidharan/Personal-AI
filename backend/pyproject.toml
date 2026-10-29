@@ -1,5 +1,5 @@
 [project]
-name = "personal-ai-workbench-backend"
+name = "personal_ai_backend"
 version = "0.1.0"
 description = "Local-first GenAI workbench - Day 1 foundation and PDF ingestion"
 readme = "README.md"

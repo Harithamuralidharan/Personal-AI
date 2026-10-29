@@ -41,3 +41,95 @@ dd { margin: 0; }
 .steps li { margin: 10px 0; color: #c0cbe0; line-height: 1.55; }
 footer { font-size: 12px; padding: 10px 2px; }
 @media (max-width: 560px) { .local-badge { display: none; } .intro { padding-top: 42px; } .upload-card, .steps { padding: 18px; } dl { grid-template-columns: 1fr; gap: 5px; } dd { margin-bottom: 8px; } }
+
+/* Ask Your Documents chat interface */
+
+.chat-card {
+  margin-top: 16px;
+}
+
+.chat-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.chat-form label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.chat-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #0b1222;
+  color: #f8fafc;
+  font: inherit;
+  resize: vertical;
+}
+
+.chat-form textarea:focus {
+  outline: 2px solid #818cf8;
+  outline-offset: 2px;
+}
+
+.chat-form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.chat-history {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.answer-card {
+  padding: 16px;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  background: #0b1222;
+  overflow-wrap: anywhere;
+}
+
+.answer-card h4 {
+  margin: 0 0 8px;
+}
+
+.answer-card p {
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.answer-card .answer-text {
+  margin-bottom: 18px;
+}
+
+.source-list {
+  padding-top: 12px;
+  border-top: 1px solid #334155;
+}
+
+.source-list ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.empty-chat {
+  margin-top: 18px;
+}
+
+@media (max-width: 600px) {
+  .chat-card {
+    padding: 14px;
+  }
+
+  .chat-form button {
+    width: 100%;
+  }
+}
